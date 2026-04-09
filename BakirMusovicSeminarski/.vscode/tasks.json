@@ -1,0 +1,39 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "Build cijeli projekat",
+            "command": "cl.exe",
+            "args": [
+                "/Zi",
+                "/EHsc",
+                "/nologo",
+                "main.cpp",
+                "Osoba.cpp",
+                "Igrac.cpp",
+                "Trener.cpp",
+                "Tim.cpp",
+                "Utakmica.cpp",
+                "Liga.cpp",
+                "TestPodaci.cpp",
+                "Meni.cpp",
+                "Datoteke.cpp",
+                "LigaFunkcije.cpp",
+                "TimFunkcije.cpp",
+                "Utils.cpp",
+                "/Fe:projekat.exe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$msCompile"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
